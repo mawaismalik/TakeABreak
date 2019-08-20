@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayLight"
+    tools:context=".domain.datalayer.ConnectivityActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundgradient"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:id="@+id/hotspotToolbar"
+        android:elevation="2dp"
+        />
+    <Switch
+        android:id="@+id/hotspotSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:elevation="1dp"
+        android:fontFamily="@font/days_one"
+        android:paddingRight="20px"
+        android:text="Create Group"
+        android:textColor="@color/primarytext"
+        android:textSize="15dp" />
+
+    <Switch
+        android:id="@+id/searchSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fontFamily="@font/days_one"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:elevation="1dp"
+        android:paddingRight="20px"
+        android:text="Join Group"
+        android:textColor="@color/primarytext"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/wifiLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:text="To see available devices, Turn on Join."
+        android:textColor="@color/black_overlay"
+         />
+
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/devicescard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/days_one"
+                android:elevation="5dp"
+                android:text="Connected Devices"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/connecteddevicesnumber"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/days_one"
+                android:gravity="center"
+                android:text="00"
+                android:textSize="30dp" />
+
+
+        </LinearLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/profilecard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:elevation="5dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="5dp"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:elevation="5dp"
+                android:fontFamily="@font/days_one"
+                android:text="Select Profile"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/profilesSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="5dp"
+                android:fontFamily="@font/days_one">
+
+            </Spinner>
+        </LinearLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/sendPayloadBtn"
+        android:textStyle="bold"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:fontFamily="@font/days_one"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:textSize="9dp"
+        android:text="activate"
+        app:cornerRadius="100dp"
+        android:visibility="gone"/>
+
+
+    <ProgressBar
+        android:id="@+id/endPointFoundbar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="192dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchSwitch" />
+
+    <TextView
+        android:id="@+id/havailableDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Available Devices"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endPointFoundbar" />
+
+    <LinearLayout
+
+        android:id="@+id/listLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        android:gravity="bottom|center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/havailableDevices">
+
+        <ListView
+            android:id="@+id/nearbyDevices"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="5dp"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="297dp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

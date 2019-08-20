@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="General"
+        >
+        <Preference
+            android:icon="@drawable/ic_baseline_account_box_24px"
+            android:title="Profile"
+            android:summary="Create and manage your profiles"
+
+            />
+        <Preference
+            android:icon="@drawable/ic_baseline_message_24px"
+            android:title="Messages"
+            android:summary="Manage auto response messages"
+            />
+        <Preference
+            android:icon="@drawable/ic_baseline_label_important_24px"
+            android:title="Signout"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>

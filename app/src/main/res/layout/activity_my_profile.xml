@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dividercolor"
+    tools:context=".ui.MyProfile">
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:clickable="true"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:elevation="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24px"
+        />
+
+    <LinearLayout
+        android:id="@+id/topblock"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/backgroundgradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/days_one"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="@color/texticon"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="67dp" />
+    </LinearLayout>
+
+
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/activatedprofilecard"
+        android:layout_below="@id/heading"
+        android:layout_marginTop="58dp"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/cardbackground"
+        app:cardElevation="@dimen/cardelevation"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_createicon" />
+            <TextView
+                android:id="@+id/currentProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/days_one"
+                android:hint="Name"
+                android:text="@string/yourname"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+
+           <android.support.design.widget.TextInputLayout
+               android:id="@+id/etProfilename"
+               android:layout_width="250dp"
+               android:hint="@string/profilehint"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               >
+               <android.support.design.widget.TextInputEditText
+
+                   android:layout_width="250dp"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/profilehint"
+                   android:layout_gravity="center"
+                   android:layout_marginBottom="5dp"/>
+           </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/appsListLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select apps from the list"
+        android:layout_below="@id/activatedprofilecard"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/days_one"
+        />
+
+
+<android.support.design.card.MaterialCardView
+    android:layout_width="344dp"
+    android:layout_marginTop="@dimen/cardelevation"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    app:cardElevation="@dimen/cardelevation"
+    android:layout_below="@+id/appsListLabel">
+        <ScrollView
+            android:layout_below="@id/appsListLabel"
+            android:layout_width="344dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:fillViewport="true"
+            >
+
+            <ListView
+                android:id="@+id/installedAppsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/texticon"
+                android:elevation="@dimen/cardelevation"
+                >
+
+            </ListView>
+
+        </ScrollView>
+</android.support.design.card.MaterialCardView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/carrot"
+        android:src="@drawable/doneicon"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:elevation="@dimen/cardelevation" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "617951610215",
+    "firebase_url": "https://take-a-break-f1d34.firebaseio.com",
+    "project_id": "take-a-break-f1d34",
+    "storage_bucket": "take-a-break-f1d34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617951610215:android:720bbfd60be00bfc",
+        "android_client_info": {
+          "package_name": "com.example.malix.takeabreak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617951610215-6k1i3lt5q4toc1h07s64icv3bfsrkn7e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.malix.takeabreak",
+            "certificate_hash": "9e202f5f14f15d0ac678d66aa002de6906e504a9"
+          }
+        },
+        {
+          "client_id": "617951610215-p9ohftjsoejfpu9bfbomio0rmp0c022i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwtxdn0kdwh5R-uLemB0uySUJPIh4X4U0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617951610215-p9ohftjsoejfpu9bfbomio0rmp0c022i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

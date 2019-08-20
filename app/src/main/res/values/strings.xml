@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">TakeABreak</string>
+    <string name="slogan">take a break</string>
+    <string name="pnauth">Phone Authentication</string>
+    <string name="phone">332 1234567</string>
+    <string name="code">Code</string>
+    <string name="vcode">Verification Code</string>
+    <string name="codesent">A Verification Code will be sent to your Phone Number</string>
+    <string name="sendverification">Send Verification</string>
+    <string name="signupdirections">A code will be sent, it will be detected automatically but if it is not detected you can put it below manually as well</string>
+    <string name="waitforcode">Wait for the code sent to you...</string>
+    <string name="spinner">code spinner</string>
+    <string name="someerror">some error occured</string>
+    <string name="phoneaut">Sign in</string>
+    <string name="enterphone">Please enter your PhoneNumber</string>
+    <string name="imagediscription">image</string>
+    <string name="verify">Verify</string>
+    <string name="signindisc">TakeABreak will send an SMS message to verify your Phonenumber.Select your country code and enter YOUR phone number.</string>
+    <string name="serviceId">com.example.malix.takeabreak</string>
+    <string name="payload">Activate</string>
+    <string name="hotspot">Wifi Tethering</string>
+    <string name="discover">discover</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="profile">My Profile</string>
+    <string name="hold">Hold</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="signout">Sign out</string>
+    <string name="yourname">Active Profile</string>
+    <string name="profilehint">profile name</string>
+    <string name="profilename">Your profile name</string>
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="m_profile">Profile</string>
+    <string name="m_setting">Setting</string>
+    <string name="m_logout">Logout</string>
+
+    <string name="personal">Personal Hold</string>
+    <string name="group">Group Hold</string>
+    <string name="schedule">Schedule Hold</string>
+    <string name="setting">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="personaldis">Organise your personal activities</string>
+    <string name="groupdis">Organise your group activities</string>
+    <string name="scheduledis">Organise your schedule activities</string>
+    <string name="settingdis">Organise your app and profiles</string>
+    <string name="welcome">Wellcome Home</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+    //List
+    <string-array name="minutes_arrays">
+        <item>00</item>
+        <item>01</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="hours_arrays">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+    </string-array>
+</resources>
